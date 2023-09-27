@@ -10,6 +10,8 @@ header{
     text-align: center;
     
 
+    
+
 }
 section{
     background: white;
@@ -21,6 +23,11 @@ section{
 
 }
 
+div{
+    text-align: center;
+    padding: 8px;
+}
+
 footer{
     font: 20px arial;
     color: white;
@@ -28,3 +35,9 @@ footer{
     font-style:italic;
 
 }
+
+
+
+
+
+
