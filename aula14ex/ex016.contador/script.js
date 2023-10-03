@@ -18,7 +18,7 @@ function contar() {
         res.innerHTML += `${c} \u{1F449}` // seta 
       }      
      
-      res.innerHTML += `\u{1f3c1}`// bandeira 
+      res.innerHTML += `\u{1f3c1}`// bandeira emoji
        } else { 
 
        }
