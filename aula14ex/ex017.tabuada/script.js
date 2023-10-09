@@ -1,7 +1,7 @@
 function tabuada(){
     let num = document.getElementById('txtn')
     let tab = document.getElementById('seltab')
-    
+    console.log('teste')
 
 
 
@@ -14,7 +14,7 @@ function tabuada(){
         tab.innerHTML = '' // antes de receber tab (res) inicia com nada 
 
         for (let c = 1 ; c <= 10; c++ ){ // tabuada c=1 começa com 1 ate 10 conta ++
-           let item = document.createElement('option')//dentro do select pra criar opções tem que ter option
+           let item = document.createElement('option')//dentro do select(Html) pra criar opções tem que ter option
            item.text = ` ${n} x ${c} = ${n*c}` //num x contador = resultado
            item.value = `tab${c}`// toda vez que cria um option tem que fazer value(6*1, 6*2 pra saber qual item foi selecionado)
            tab.appendChild(item) // adicionar um elemento filho que se chama (item) resultado. 
