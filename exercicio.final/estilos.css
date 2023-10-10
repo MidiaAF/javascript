@@ -6,7 +6,7 @@ body{
 }
 
 section{
-    font: normal 20px arial;
+    font: normal 20px arial; 
     background-color: white;
     padding: 100px;
     width: 500px;
@@ -16,11 +16,15 @@ section{
 }
 
 h1{
+    font:normal, 30px, arial;
     color: white;
     text-align: center;
+    font: normal 50px, arial;
 }
 
 footer{
+    padding: 10px;
+    font:normal 15px;
     text-align: center;
     color: white;
    font-style: italic;
