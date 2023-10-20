@@ -2,7 +2,6 @@ var valor = [] //array
 const num = document.getElementById('dignum'); // adicionar numero  
 const inf = document.getElementById ('fin'); //bloco com os numeros digitados em num na lista 
 const res = document.getElementById('res')
-const limpar = document.getElementById('limpar')
 
 
 function adicionar(){ 
@@ -18,9 +17,8 @@ function adicionar(){
         var item = document.createElement('option') // criando elemento OPTION no bloco dentro de select 
         item.innerText = `Valor ${num.value} adicionado` //escrever o texto e o valor adicionado dentro do bloco
         inf.appendChild(item)  // aparecer na tela(bloco) o que foi digitado em num
-       
-        num.focus()   // para o cursor ficar em num novamente
         num.value = ''      //apagar o valor que fica no num  
+        num.focus()   // para o cursor ficar em num novamente 
     }   
 }
  }
@@ -40,13 +38,9 @@ function adicionar(){
                     maior = valor[i]
                 }
                     if(valor[i] < menor){
-                    menor = valor[i]  
-                    
-                    
+                    menor = valor[i]             
             }
-            
         }
-        
             
             console.log(res)
             res.innerHTML = 
@@ -55,14 +49,12 @@ function adicionar(){
             <p>O menor valor informado foi o ${menor}</p>
             <p>Somando todos os valores, temos ${soma}</p>
             <p>A média dos valores informados é ${media}</p>`;
-            fin.value = ''      //apagar o valor que fica no num  
-             
-                     }          
-                 }
-                 
-       
-
-                
+            
+        } 
+        
+        valor = []; // limpar a matriz para futuros cálculos
+            
+    }
         
     
         
