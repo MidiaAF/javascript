@@ -13,6 +13,7 @@ function adicionar(){
         var valoradicionado = parseInt (num.value);// parseInt para converter o valor do campo de entrada(valor) em um apenas o 'número' inteiro antes de adicioná-lo à matriz(finalizar)       
         if(valor.includes(valoradicionado)){ //antes de adicionar um número à lista, verificamos se ele já existe no array valor usando valor.includes(valoradicionado). Se o número já estiver na lista, exibimos um alerta informando que ele já foi adicionado. Isso evita a repetição de números na lista.
             window.alert('Este valor já foi adicionado!')
+            res.innerHTML = '' // limpar quando acrescentar numero
         }else{
         valor.push(valoradicionado); // adicionar o valor a matrix
         var item = document.createElement('option') // criando elemento OPTION no bloco dentro de select 
@@ -40,14 +41,9 @@ function adicionar(){
                     maior = valor[i]
                 }
                     if(valor[i] < menor){
-                    menor = valor[i]  
-                    
-                    
-                  
-            }
-            
-        }
-        
+                    menor = valor[i]                
+            }            
+        }       
        
             console.log(res)
             res.innerHTML = //escrever em res o resultado de finalizar
@@ -56,10 +52,8 @@ function adicionar(){
             <p>O menor valor informado foi o ${menor}</p>
             <p>Somando todos os valores, temos ${soma}</p>
             <p>A média dos valores informados é ${media}</p>`;
-            fin.value = '' 
-            for (var prop in obj) { if (obj.hasOwnProperty(prop)) { delete obj[prop]; } }
-            obj.value =''
-             
+            fin.value = ''          
+                       
                      }          
                  }
                  
