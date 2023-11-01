@@ -31,8 +31,8 @@ function adicionar(){
             if (valor.length == 0) {
                 window.alert( 'Você ainda não adicionou valores, tente novamente ');// adicionar um numero antes de clicar finalizar           
              } else {
-            var maior = 0
-            var menor = 100
+            var maior = 0 // primeiro numero posição 
+            var menor = 100 // ultima posição
             var soma = valor.reduce((valor, length) => valor + length, 0); // a soma de todos valor usa função reduce
             var media = soma / valor.length; // a média de todos valor
 
